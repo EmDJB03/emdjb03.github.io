@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+ <head>
+  <link rel="stylesheet" href="style.css">
+  <title>My Shop</title>
+ </head>
+ 
+ <body>
+ <p id="itemCounter">0</p>
+   <nav>
+  <div id="header">
+   <a href="index.html"><h1 id="header-title" >My Shop</h1></a>
+   <input id="header-search" type="text" placeholder="Rechercher">
+   <button class="searchb"><img src="logo/search.png" width="22px" height="22px"></button>
+   <ul id="header-nav">
+   <li><button onclick="opencart()"><img src="logo/cart.png" width="30px" height="30px"></button></li>
+   <li><button><img src="logo/user.png" width="30px" height="30px"></button></li>
+   </ul>
+  </div>
+  </nav>
+  
+  <div id="login">
+  <h2>Login:</h2>
+  <input class="inputa" type="text" placeholder="Email"><br>
+  <input class="inputa" type="password" placeholder="Mot de passe"><br>
+  <button class="connection">Connection</button>
+  <h4 class="or">OR</h4>
+  <button onclick="signin()" class="signin">Sign in</button></a>
+  </div>
+  <div id="create">
+  <h2>Créer votre compte:</h2>
+  <h4>Facile, rapide, et totalement gratuit</h4>
+  <input class="inputa" type="text" placeholder="Nom">
+  <input class="inputa" type="text" placeholder="Prénom"><br>
+  <input class="inputa" type="text" placeholder="Email"><br>
+  <input class="inputa" type="text" placeholder="Username"><br>
+  <input class="inputa" type="password" placeholder="Nouveau mot de passe"><br>
+  <input class="inputa" type="password" placeholder="Confirmer mot de passe"><br>
+  <span class="birthday">Birthday:</span>
+  <input class="inputa" type="date"><br>
+  <button class="signin">Créer votre compte</button>
+  <h4 class="or">OR</h4>
+  <button onclick="login()" class="signin">Login</button></a>
+  </div>
+  
+  <div id="footer" style="margin-top: 100px;">
+  <div class="container">
+  <div id="column">
+  <h4>My Links</h4>
+  <p>
+  <a href="mailto: emdjb2003@gmail.com">Contact</a><br>
+  <a href="http://twitter.com/djb_em">Twitter</a><br>
+  <a href="https://instagram.com/mehdi_emdjb/">Instagram</a>
+  </p>
+  </div>
+  <div id="column">
+  <h4>My Comment</h4>
+  <p>Please rate my first website</p>
+  </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+ </body>
+</html>

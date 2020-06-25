@@ -1,0 +1,255 @@
+body {
+margin: -25px 0;
+}
+#header {
+height: 100px;
+line-height:80px;
+background: linear-gradient(90deg, Blue, darkViolet);
+color: white;
+}
+#header-title {
+display: block ; 
+float: left ; 
+font-size: 30px;
+font-weight: bold;
+margin-left: 60px;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+#header-search {
+margin: 48px 0 0 100px;
+background-color: transparent;
+padding: 3px 75px 3px 30px;
+border: solid 4px white;
+border-radius: 15px;
+color: white;
+font-size: 15px;
+}
+.searchb {
+position: absolute;
+background-color: transparent;
+top: 30px;
+left: 615px;
+border: none;
+}
+#header-nav {
+display: block ; 
+float: right ; 
+margin-top: 32px;
+margin-right: 10px;
+
+}
+#header-nav li {
+display: inline-block;
+}
+#header-nav button {
+background-color: transparent;
+border: none;
+}
+.categories {
+margin-left: 50px;
+margin-top: 30px;
+max-width: 200px;
+border: solid 4px;
+border-radius: 10px;
+border-color: blue darkviolet darkviolet blue;
+padding-left: 20px;
+}
+#content-cat {
+background-color: white;
+list-style-type: none;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+font-weight: bold;
+line-height: 3;
+}
+#content li img {
+vertical-align: middle;
+margin-left: -20px;
+}
+.tic, .toc {
+border-radius: 50%;
+padding: 7px;
+}
+.tic {
+background: linear-gradient(blue, darkViolet);
+width:30px;
+height:30px;
+}
+.toc {
+background: linear-gradient(darkViolet, blue);
+width:30px;
+height:30px;
+}
+#content li span {
+margin-left: 10px;
+}
+.sousCategories {
+border: solid 4px black;
+border-radius: 10px;
+float: left;
+position: absolute;
+left: 300px;
+top: 104px;
+border-color: blue darkviolet darkviolet blue;
+padding: 8px 0 0 20px;
+width: 180px;
+}
+#blockph, #blockg, #blockpc, #blocks{
+visibility: hidden;
+}
+.containera {
+width: 980px;
+padding-bottom: 40px;
+border-bottom:solid 3px gray;
+}
+.divall {
+display: inline-block;
+margin: 20px 0 20px 20px;
+border: solid 3px;
+border-radius: 8px;
+border-color: blue blue blueViolet blueViolet;
+text-align: center;
+padding: 10px;
+line-height: 0.7;
+}
+#mostbought {
+margin-left: 30px;
+display: block;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+#gamingConsoles, #gamingCP, #phonesSmartp {
+margin-left: 30px;
+display: none;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+#itemCounter {
+position: absolute;
+right: 86px;
+top: 6px;
+font-size: 13px;
+color: white;
+background-color: red;
+border-radius: 10px;
+padding: 0 4px 0 4px ;
+display: none;
+}
+
+.cartp {
+width: 300px;
+background-color: snow;
+border: solid 3px Gray;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+position: absolute;
+float:left;
+right: 10px;
+top: 80px;
+display:none;
+
+}
+.pic {
+height: 80px;
+width: 80px;
+vertical-align: middle;
+border-right: solid 1.5px gray;
+margin-right: 15px;
+}
+.divi {
+line-height: 6;
+}
+.sdivi {
+border-top: solid 1.5px gray;
+display: none;
+}
+.croix {
+display:absolute;
+float:right;
+margin-top:10px;
+}
+.diff {
+line-height: 97.5px;
+position: absolute;
+left: 260px;
+top: 40px;
+float: left;
+list-style-type: none;
+display: none;
+}
+#pay {
+padding: 10px 50px;
+margin-left: 40px;
+border-radius: 7px;
+background-color: white;
+border: solid 4px;
+border-color: blue darkViolet darkViolet blue;
+}
+#pay span {
+font-size: 15px;
+}
+a {
+color: white;
+text-decoration: none;
+}
+#login {
+margin-top: 50px;
+text-align: center;
+display: block;
+}
+#create {
+margin-top: 50px;
+text-align: center;
+display: none;
+}
+.inputa {
+margin-bottom: 11px;
+padding: 4px 10px;
+border: solid 2px;
+border-color:blue blue blueViolet blueViolet;
+border-radius: 7px;
+}
+.connection {
+border-radius: 7px;
+padding: 4px 7px 4px 7px;
+background: linear-gradient(270deg, blue, blueViolet);
+color: white;
+}
+.or{
+margin-top: 20px;
+}
+.signin {
+margin-top: 5px;
+border-radius: 7px;
+padding: 7px 40px 7px 40px;
+background: linear-gradient(270deg, blue, blueViolet);
+color: white;
+}
+.birthday {
+font-size: 15px;
+}
+#column {
+min-width: 300px ; 
+display: inline-block ;
+vertical-align: top;
+}
+#footer {
+background-color: #2f2f2f;
+padding: 50px 0; 
+color: white ; 
+padding-left: 50px;
+}
+#footer h4 {
+color: white ;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+#footer a {
+color: deepskyblue;
+}
+.container {
+max-height: 1000px ;
+margin: 0 auto; 
+}

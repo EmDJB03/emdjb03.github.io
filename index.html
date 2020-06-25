@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+
+ <head>
+  <link rel="stylesheet" href="style.css">
+  <title>My Shop</title>
+ </head>
+ 
+ <body>
+ <p id="itemCounter">0</p>
+   <nav>
+  <div id="header">
+   <a href="index.html"><h1 id="header-title" >My Shop</h1></a>
+   <input id="header-search" type="text" placeholder="Rechercher">
+   <button class="searchb"><img src="logo/search.png" width="22px" height="22px"></button>
+   <ul id="header-nav">
+   <li><button onclick="opencart()"><img src="logo/cart.png" width="30px" height="30px"></button></li>
+   <li><a href="login.html"><button><img src="logo/user.png" width="30px" height="30px"></button></a></li>
+   </ul>
+  </div>
+  </nav>
+  
+ <div id="everything" onclick="hidec()">
+  <div id="content">
+  <div class="containera">
+  <div class="categories">
+  <h2 id="title-cat">Categories :</h2>
+  <ul id="content-cat">
+  <li onclick="blockph()"><img class="tic" src="logo/phones.png"><span>Phones</span></li>
+  <li onclick="blockpc()"><img class="toc" src="logo/pc.png"><span>Computers</span></li>
+  <li onclick="blocks()"><img class="tic" src="logo/sport.png"><span>Sports</span></li>
+  <li onclick="blockg()"><img class="toc" src="logo/gaming.png"><span>Games</span></li>
+  <li onclick="blocktv()"><img class="tic" src="logo/tv.png"><span>TV</span></li>
+  </ul>
+  </div>
+  <div class="sousCategories" id="blockph">
+  <h3 id="title-sc">Phones :</h3>
+  <ul id="content-sc">
+  <li onclick="smartphones()">Smartphones</li>
+  <li>Covers</li>
+  <li>Earphones</li>
+  <li>Accessories</li>
+  </ul>
+  </div>
+  <div class="sousCategories" id="blockg">
+  <h3 id="title-sc">Games :</h3>
+  <ul id="content-sc">
+  <li onclick="consoles()">Console</li>
+  <li>PC gaming</li>
+  <li>Accessories</li>
+  <li onclick="cp()">PSN cards</li>
+  <li>Gaming Matos</li>
+  </ul>
+  </div>
+  <div class="sousCategories" id="blockpc">
+  <h3 id="title-sc">Computers :</h3>
+  <ul id="content-sc">
+  <li>High-perfom</li>
+  <li>PC gaming</li>
+  <li>Medium-perform</li>
+  <li>Low-perform</li>
+  <li>Accessories</li>
+  </ul>
+  </div>
+  <div class="sousCategories" id="blocks">
+  <h3 id="title-sc">Sports :</h3>
+  <ul id="content-sc">
+  <li>Football</li>
+  <li>Basket</li>
+  <li>Fitness</li>
+  <li>BodyBuilding</li>
+  <li>Olympic Sports</li>
+  </ul>
+  </div>
+  </div>
+  <div class="containerb">
+   <div id="mostbought">
+   <h2>Les plus populaires: </h2>
+   <div class="divall">
+   <img src="img/PS4SFNBR.jpg" height="150px" width="180px">
+   <h4>PS4 Slim 500go Fortnite</h4>
+   <h4>Prix: 3500dh</h4>
+   <button onclick="addToCart(ps4sfnbr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/IPHONE11PM.jpg" height="150px" width="180px">
+   <h4>Iphone 11 pro max</h4>
+   <h4>Prix: 14000dh</h4>
+   <button onclick="addToCart(iphone11pm)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/20EPSN.jpg" height="150px" width="180px">
+   <h4>Carte psn 20€ FR</h4>
+   <h4>Prix: 260dh</h4>
+   <button onclick="addToCart(psn20efr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/SMGZF.webp" height="150px" width="180px">
+   <h4>Galaxy Z Flip</h4>
+   <h4>Prix: 14000dh</h4>
+   <button onclick="addToCart(smgzf)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/HPI5.jpg" height="150px" width="180px">
+   <h4>HP Pavilion i5</h4>
+   <h4>Prix: 9500dh</h4>
+   <button onclick="addToCart(hpi5)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/BEATSS3.jpg" height="150px" width="180px">
+   <h4>Beats studio 3</h4>
+   <h4>Prix: 3200dh</h4>
+   <button onclick="addToCart(beatss3)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/SMC50P.jpg" height="150px" width="180px">
+   <h4>Samsung curved 50'</h4>
+   <h4>Prix: 6000dh</h4>
+   <button onclick="addToCart(smc50p)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/MBP13P.jpeg" height="150px" width="180px">
+   <h4>Macbook pro 13'</h4>
+   <h4>Prix: 21000dh</h4>
+   <button onclick="addToCart(mbp13p)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/KIT20KG.jpg" height="150px" width="180px">
+   <h4>Kit haltères 20kg</h4>
+   <h4>Prix: 350dh</h4>
+   <button onclick="addToCart(kit20kg)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/CLAVIERG.jpg" height="150px" width="180px">
+   <h4>Clavier gamer </h4>
+   <h4>Prix: 250dh</h4>
+   <button onclick="addToCart(clavierg)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   </div>
+   <div id="gamingConsoles">
+   <h1>Games: </h1>
+   <h2>Consoles: </h2>
+   <div class="divall">
+   <img src="img/PS4SFNBR.jpg" height="150px" width="180px">
+   <h4>PS4 Slim 500go Fortnite</h4>
+   <h4>Prix: 3500dh</h4>
+   <button onclick="addToCart(ps4sfnbr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/PS4P1T.jpg" height="150px" width="180px">
+   <h4>PS4 Pro 1to</h4>
+   <h4>Prix: 5000dh</h4>
+   <button onclick="addToCart(ps4p1t)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/XBOXO1T.jpeg" height="150px" width="180px">
+   <h4>XBOX one 1to</h4>
+   <h4>Prix: 4500dh</h4>
+   <button onclick="addToCart(xboxo1t)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/XBOXOX1T.jpg" height="150px" width="180px">
+   <h4>XBOX one X 1to</h4>
+   <h4>Prix: 5500dh</h4>
+   <button onclick="addToCart(xboxox1t)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/NSWITCH.jpg" height="150px" width="180px">
+   <h4>Nintendo switch</h4>
+   <h4>Prix: 4000dh</h4>
+   <button onclick="addToCart(nswitch)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   </div>
+   <div id="gamingCP">
+   <h1>Games: </h1>
+   <h2>PSN Cards: </h2>
+   <div class="divall">
+   <img src="img/5EPSN.jpg" height="150px" width="180px">
+   <h4>Carte psn 5€ FR</h4>
+   <h4>Prix: 75dh</h4>
+   <button onclick="addToCart(psn5efr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/10EPSN.jpg" height="150px" width="180px">
+   <h4>Carte psn 10€ FR</h4>
+   <h4>Prix: 130dh</h4>
+   <button onclick="addToCart(psn10efr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/20EPSN.jpg" height="150px" width="180px">
+   <h4>Carte psn 20€ FR</h4>
+   <h4>Prix: 260dh</h4>
+   <button onclick="addToCart(psn20efr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/50EPSN.jpg" height="150px" width="180px">
+   <h4>Carte psn 50€ FR</h4>
+   <h4>Prix: 600dh</h4>
+   <button onclick="addToCart(psn50efr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/75EPSN.jpg" height="150px" width="180px">
+   <h4>Carte psn 75€ FR</h4>
+   <h4>Prix: 900dh</h4>
+   <button onclick="addToCart(psn75efr)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/100EPSN.jpg" height="150px" width="180px">
+   <h4>Carte psn 100€ FR</h4>
+   <h4>Prix: 1200dh</h4>
+   <button onclick="addToCart(psn100efr) opencart()"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   </div>
+   <div id="phonesSmartp">
+   <h1>Phones: </h1>
+   <h2>Smartphones: </h2>
+   <div class="divall">
+   <img src="img/SMGS20.jpeg" height="150px" width="180px">
+   <h4> Galaxy S20 Ultra </h4>
+   <h4>Prix: 12000dh</h4>
+   <button onclick="addToCart(smgs20)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/IPHONE11PM.jpg" height="150px" width="180px">
+   <h4>Iphone 11 pro max</h4>
+   <h4>Prix: 14000dh</h4>
+   <button onclick="addToCart(iphone11pm)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/SMGZF.webp" height="150px" width="180px">
+   <h4>Galaxy Z Flip</h4>
+   <h4>Prix: 14000dh</h4>
+   <button onclick="addToCart(smgzf)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   <div class="divall">
+   <img src="img/IPADP20.jpg" height="150px" width="180px">
+   <h4>Ipad pro 2020</h4>
+   <h4>Prix: 9000dh</h4>
+   <button onclick="addToCart(ipadp20)"><img src="logo/addToCart.png" height="20px" width="20px"></button>
+   </div>
+   </div>
+  </div>
+  </div>
+  <div id="footer">
+  <div class="container">
+  <div id="column">
+  <h4>My Links</h4>
+  <p>
+  <a href="mailto: emdjb2003@gmail.com">Contact</a><br>
+  <a href="http://twitter.com/djb_em">Twitter</a><br>
+  <a href="https://instagram.com/mehdi_emdjb/">Instagram</a>
+  </p>
+  </div>
+  <div id="column">
+  <h4>My Comment</h4>
+  <p>Please rate my first website</p>
+  </div>
+  </div>
+  </div>
+ </div>  
+  
+  <div class="cartp" id="cart">
+  <h2>My Cart: </h2>
+  <div class="divi">
+  <div class="sdivi" id="ps4sfnbr">
+  <img class="pic" src="img/PS4SFNBR.jpg"><span>PS4 Slim Fortnite</span>
+  <button onclick="removeFromCart(ps4sfnbr)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="ps4p1t">
+  <img class="pic" src="img/PS4P1T.jpg"><span>PS4 Pro 1to</span>
+  <button onclick="removeFromCart(ps4p1t)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="xboxo1t">
+  <img class="pic" src="img/XBOXO1T.jpeg"><span>Xbox One 1to</span>
+  <button onclick="removeFromCart(xboxo1t)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="xboxox1t">
+  <img class="pic" src="img/XBOXOX1T.jpg"><span>Xbox One X 1to</span>
+  <button onclick="removeFromCart(xboxox1t)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="nswitch">
+  <img class="pic" src="img/NSWITCH.jpg"><span>Nintendo Switch</span>
+  <button onclick="removeFromCart(nswitch)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="psn5efr">
+  <img class="pic" src="img/5EPSN.jpg"><span>PSN 5€ fr</span>
+  <button onclick="removeFromCart(psn5efr)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="psn10efr">
+  <img class="pic" src="img/10EPSN.jpg"><span>PSN 10€ fr</span>
+  <button onclick="removeFromCart(psn10efr)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="psn20efr">
+  <img class="pic" src="img/20EPSN.jpg"><span>PSN 20€ fr</span>
+  <button onclick="removeFromCart(psn20efr)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="psn50efr">
+  <img class="pic" src="img/50EPSN.jpg"><span>PSN 50€ fr</span>
+  <button onclick="removeFromCart(psn50efr)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="psn75efr">
+  <img class="pic" src="img/75EPSN.jpg"><span>PSN 75€ fr</span>
+  <button onclick="removeFromCart(psn75efr)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="psn100efr">
+  <img class="pic" src="img/100EPSN.jpg"><span>PSN 100€ fr</span>
+  <button onclick="removeFromCart(psn100efr)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="iphone11pm">
+  <img class="pic" src="img/IPHONE11PM.jpg"><span>Iphone 11 pro max</span>
+  <button onclick="removeFromCart(iphone11pm)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="smgzf">
+  <img class="pic" src="img/SMGZF.webp"><span>Galaxy Z Flip</span>
+  <button onclick="removeFromCart(smgzf)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="smgs20">
+  <img class="pic" src="img/SMGS20.jpeg"><span>Galaxy S20 ultra</span>
+  <button onclick="removeFromCart(smgs20)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="ipadp20">
+  <img class="pic" src="img/IPADP20.jpg"><span>Ipad Pro 2020</span>
+  <button onclick="removeFromCart(ipadp20)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="hpi5">
+  <img class="pic" src="img/HPI5.jpg"><span>HP Pavilion i5</span>
+  <button onclick="removeFromCart(hpi5)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="mbp13p">
+  <img class="pic" src="img/MBP13P.jpeg"><span>Macbook Pro 13'</span>
+  <button onclick="removeFromCart(mbp13p)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="clavierg">
+  <img class="pic" src="img/CLAVIERG.jpg"><span>Clavier gamer</span>
+  <button onclick="removeFromCart(clavierg)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="beatss3">
+  <img class="pic" src="img/BEATSS3.jpg"><span>Beats studio 3</span>
+  <button onclick="removeFromCart(beatss3)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="kit20kg">
+  <img class="pic" src="img/KIT20KG.jpg"><span>Kit Haltères 20kg</span>
+  <button onclick="removeFromCart(kit20kg)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <div class="sdivi" id="smc50p">
+  <img class="pic" src="img/SMC50P.jpg"><span>Samsung Curved 50'</span>
+  <button onclick="removeFromCart(smc50p)" class="croix"><img src="logo/croix.png" height="15px"width="15px"></button>
+  </div>
+  <a href="login.html"><button id="pay"><span>Passer au paiment</span></button></a>
+  </div>
+  </div>
+  
+  <script type="text/javascript" src="script.js"></script>
+ </body>
+
+</html>
